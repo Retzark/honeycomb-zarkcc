@@ -1,8 +1,8 @@
 const config = require('./config');
 module.exports = {
     "balances": {
-        [config.leader]: 0,
-        "spk-cc": 0, //additional distributions
+        [config.leader]: 100000000000,
+        "zark-cc": 0, //additional distributions
         "ra": 0,
         "rb": 0,
         "rc": 0,
@@ -37,7 +37,7 @@ module.exports = {
                 "domain": config.mainAPI,
                 "escrow": true,
                 "escrows": 0,
-                "lastGood": 49994100, //genesisblock
+                "lastGood": 71783147, //genesisblock
                 "marketingRate": 0,
                 "mskey": "STM6EUEaEywYoxpeVDX1fPDxrsyQLGTsgYf1LLDSHWwiKBdgRhGrx",
                 "self": config.leader,
@@ -56,13 +56,13 @@ module.exports = {
     },
     "stats": {
         "IPFSRate": 2000,
-        "budgetRate": 2000,
+        "budgetRate": 2000, //
         "currationRate": 2000,
         "delegationRate": 2000,
         "dex_fee": "0.005",
         "hashLastIBlock": "Genesis",
         "icoPrice": 0, //in millihive
-        "interestRate": 999999999999, //mints 1 millitoken per this many millitokens in your DAO period
+        "interestRate": 10000, //mints 1 millitoken per this many millitokens in your DAO period
         "lastBlock": "",
         "movingWeight": 0,
         "marketingRate": 2500,
@@ -90,6 +90,6 @@ module.exports = {
         "nodeRate": 2000,
         "outOnBlock": 0, //amm ICO pricing
         "savingsRate": 1000,
-        "tokenSupply": 1 //your starting token supply
+        "tokenSupply": 100000000000 //your starting token supply
     }
 }

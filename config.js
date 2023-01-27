@@ -1,14 +1,14 @@
 require('dotenv').config();
 const ENV = process.env;
 
-const username = ENV.account || 'regardspk';
+const username = ENV.account || 'retzark';
 const active = ENV.active || '';
-const follow = ENV.follow || 'regardspk';
+const follow = ENV.follow || 'retzark';
 const msowner = ENV.msowner || '';
 const mspublic = ENV.mspublic || '';
 const memoKey = ENV.memo || '';
 const hookurl = ENV.discordwebhook || '';
-const NODEDOMAIN = ENV.domain || 'https://spktoken.dlux.io' //where your API lives
+const NODEDOMAIN = ENV.domain || 'https://zark.d.buzz' //where your API lives
 const acm = ENV.account_creator || false //account creation market ... use your accounts HP to claim account tokens
 const mirror = ENV.mirror || false //makes identical posts, votes and IPFS pins as the leader account
 const port = ENV.PORT || 3001;
@@ -27,7 +27,7 @@ const timeoutContinuous = ENV.timeoutContinuous || 30000
 // testing configs for replays
 const override = ENV.override || 0 //69116600 //will use standard restarts after this blocknumber
 const engineCrank =
-  ENV.startingHash || "QmWh6F8DKyDjRxkvgrh89Ssjh9zoNtm8UYS3CztppiWFHj"; //but this state will be inserted before
+  ENV.startingHash || ""; //but this state will be inserted before
 
 // third party configs
 const rta = ENV.rta || '' //rtrades account : IPFS pinning interface
@@ -66,24 +66,24 @@ const clients = ENV.clients ? ENV.clients.split(" ") : [
 
 //!!!!!!! -- THESE ARE COMMUNITY CONSTANTS -- !!!!!!!!!//
 //TOKEN CONFIGS -- ALL COMMUNITY RUNNERS NEED THESE SAME VALUES
-const starting_block = 62313601; //from what block does your token start
-const prefix = 'spkcc_' //Community token name for Custom Json IDs
-const TOKEN = 'LARYNX' //Token name
+const starting_block = 71783147; //from what block does your token start
+const prefix = 'zarkcc_' //Community token name for Custom Json IDs
+const TOKEN = 'Zark' //Token name
 const precision = 3 //precision of token
-const tag = 'spk' //the fe.com/<tag>/@<leader>/<permlink>
-const jsonTokenName = 'larynx' //what customJSON in Escrows and sends is looking for
-const leader = 'regardspk' //Default account to pull state from, will post token
+const tag = 'Zark' //the fe.com/<tag>/@<leader>/<permlink>
+const jsonTokenName = 'zark' //what customJSON in Escrows and sends is looking for
+const leader = 'retzark' //Default account to pull state from, will post token
 const ben = '' //Account where comment benifits trigger token action
 const delegation = '' //account people can delegate to for rewards
 const delegationWeight = 1000 //when to trigger community rewards with bens
-const msaccount = 'spk-cc' //account controlled by community leaders
-const msPubMemo = 'STM5GNM3jpjWh7Msts5Z37eM9UPfGwTMU7Ksats3RdKeRaP5SveR9'
-const msPriMemo = '5KDZ9fzihXJbiLqUCMU2Z2xU8VKb9hCggyRPZP37aprD2kVKiuL'
+const msaccount = 'zark-cc' //account controlled by community leaders
+const msPubMemo = 'STM6d8JLoe3WqZmfLzievMUGGWRwiUUsXYk3C6yJCwaoZLX8WnGvz'
+const msPriMemo = '5KfdEm8oZHwt2qeSLZZgoKK15WP5pHAvWJq4EvFGcJhRujkAax3'
 const msmeta = ''
-const mainAPI = 'spktoken.dlux.io' //leaders API probably
-const mainRender = '' //data and render server
-const mainFE = '3speak.tv' //frontend for content
-const mainIPFS = 'ipfs.3speak.tv' //IPFS service
+const mainAPI = 'zark.d.buzz' //leaders API probably
+const mainRender = 'zarkdata.d.buzz' //data and render server
+const mainFE = 'market.d.buzz' //frontend for content
+const mainIPFS = 'ipfs.d.buzz' //IPFS service
 const mainICO = '' //Account collecting ICO HIVE
 const footer = ''//`\n[Find us on Discord](https://discord.gg/Beeb38j)`
 const hive_service_fee = 100 //HIVE service fee for transactions in Hive/HBD in centipercents (1% = 100)
@@ -97,7 +97,7 @@ const features = {
     nft: false, //nfts
     state: true, //api dumps
     claimdrop: true, //claim drops
-    inflation: false //inflation
+    inflation: true //inflation
 }
 const featuresModel = {
             claim_id: 'claim',
