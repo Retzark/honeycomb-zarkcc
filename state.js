@@ -37,7 +37,7 @@ module.exports = {
                 "domain": config.mainAPI,
                 "escrow": true,
                 "escrows": 0,
-                "lastGood": 71783147, //genesisblock
+                "lastGood": 71790732, //genesisblock
                 "marketingRate": 0,
                 "mskey": "STM6EUEaEywYoxpeVDX1fPDxrsyQLGTsgYf1LLDSHWwiKBdgRhGrx",
                 "self": config.leader,
@@ -62,7 +62,7 @@ module.exports = {
         "dex_fee": "0.005",
         "hashLastIBlock": "Genesis",
         "icoPrice": 0, //in millihive
-        "interestRate": 10000, //mints 1 millitoken per this many millitokens in your DAO period
+        "interestRate": 1000000, //mints 1 millitoken per this many millitokens in your DAO period
         "lastBlock": "",
         "movingWeight": 0,
         "marketingRate": 2500,
