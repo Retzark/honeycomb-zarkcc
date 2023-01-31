@@ -37,9 +37,9 @@ module.exports = {
                 "domain": config.mainAPI,
                 "escrow": true,
                 "escrows": 0,
-                "lastGood": 71902899, //genesisblock
+                "lastGood": 71904242, //genesisblock
                 "marketingRate": 0,
-                "mskey": "STM6EUEaEywYoxpeVDX1fPDxrsyQLGTsgYf1LLDSHWwiKBdgRhGrx",
+                "mskey": "",
                 "self": config.leader,
                 "wins": 0,
                 "yays": 0
@@ -62,7 +62,7 @@ module.exports = {
         "dex_fee": "0.005",
         "hashLastIBlock": "Genesis",
         "icoPrice": 0, //in millihive
-        "interestRate": 1000000, //mints 1 millitoken per this many millitokens in your DAO period
+        "interestRate": 10000000, //mints 1 millitoken per this many millitokens in your DAO period
         "lastBlock": "",
         "movingWeight": 0,
         "marketingRate": 2500,
@@ -73,9 +73,9 @@ module.exports = {
                 "regardspk": 1,
             },
             "active_threshold": 1,
-            "memo_key": "STM5se9o2oZwY7ztpo2scyvf12RR41zaYa6rozBtetwfr1DmH1J5k",
+            "memo_key": "",
             "owner_key_auths": {
-                "STM6EUEaEywYoxpeVDX1fPDxrsyQLGTsgYf1LLDSHWwiKBdgRhGrx": 1,
+                "": 1,
             },
             "owner_threshold": 1,
             "posting_account_auths": {
