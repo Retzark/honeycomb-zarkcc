@@ -185,7 +185,8 @@ function dao(num) {
             stats.dex_fee = parseFloat((dexfeea / dexfeed)/100).toFixed(5);
             stats.dex_max = parseFloat((dexmaxa / dexmaxd)*100).toFixed(2);
             stats.dex_slope = parseFloat((dexslopea / dexsloped)*100).toFixed(2);
-            stats.daoclaim.v = parseInt(dva / dvd);
+            //stats.daoclaim.v = parseInt(dva / dvd);
+            stats.daoclaim.v = parseInt(dva / dvd) > 0 ? parseInt(dva / dvd) : 0;
             for(var node in newOwners){
                 newOwners[node].g = runners[node]?.g ? runners[node].g : 0;
             }
