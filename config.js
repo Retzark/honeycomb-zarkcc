@@ -66,7 +66,7 @@ const clients = ENV.clients ? ENV.clients.split(" ") : [
 
 //!!!!!!! -- THESE ARE COMMUNITY CONSTANTS -- !!!!!!!!!//
 //TOKEN CONFIGS -- ALL COMMUNITY RUNNERS NEED THESE SAME VALUES
-const starting_block = 71790732; //from what block does your token start
+const starting_block = 71899230; //from what block does your token start
 const prefix = 'zarkcc_' //Community token name for Custom Json IDs
 const TOKEN = 'Zark' //Token name
 const precision = 3 //precision of token
@@ -102,7 +102,7 @@ const features = {
 const featuresModel = {
             claim_id: 'claim',
             claim_S: 'Airdrop',
-            claim_B: true,
+            claim_B: false,
             claim_json: 'drop',
             rewards_id: 'shares_claim',
             rewards_S: 'Rewards',

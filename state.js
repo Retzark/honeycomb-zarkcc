@@ -68,7 +68,7 @@ module.exports = {
         "marketingRate": 2500,
         "maxBudget": 1000000000,
         "ms": {
-            "account": "spk-cc",
+            "account": "retzark",
             "active_account_auths": {
                 "regardspk": 1,
             },
