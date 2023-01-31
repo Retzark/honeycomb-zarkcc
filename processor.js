@@ -3,7 +3,7 @@ const { TXID } = require("./index");
 module.exports = function (
   client,
   nextBlock = 1,
-  prefix = "dlux_",
+  prefix = "zark_",
   account = "null",
   vOpsRequired = false
 ) {

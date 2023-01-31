@@ -66,7 +66,7 @@ const clients = ENV.clients ? ENV.clients.split(" ") : [
 
 //!!!!!!! -- THESE ARE COMMUNITY CONSTANTS -- !!!!!!!!!//
 //TOKEN CONFIGS -- ALL COMMUNITY RUNNERS NEED THESE SAME VALUES
-const starting_block = 71899230; //from what block does your token start
+const starting_block = 71901685; //from what block does your token start
 const prefix = 'zarkcc_' //Community token name for Custom Json IDs
 const TOKEN = 'Zark' //Token name
 const precision = 3 //precision of token
@@ -180,10 +180,10 @@ const adverts = [
 const detail = {
                 name: 'Larynx Miner Token',
                 symbol: 'LARYNX',
-                icon: 'https://www.dlux.io/img/dlux-hive-logo-alpha.svg',
+                icon: 'https://market.d.buzz/img/zark-hive-logo-alpha.svg',
                 supply:'Hive 1:1 Airdrop',
                 wp:`https://docs.google.com/document/d/1_jHIJsX0BRa5ujX0s-CQg3UoQC2CBW4wooP2lSSh3n0/edit?usp=sharing`,
-                ws:`https://www.dlux.io`,
+                ws:`https://market.d.buzz`,
                 be:`https://hiveblockexplorer.com/`,
                 text: `Larynx is a token that is used to mine SPK.`
             }

@@ -57,7 +57,7 @@ While it runs it verifies other nodes are operating correctly and confirms this 
 
 Deploy from heroku or similar and set ENV variables with a hive name and active key. Deploy from home computer for maximum account security.
 
-* `account` - dlux-io
+* `account` - retzark
 * `active` - active posting key (will run escrow transactions for rewards) !! *caution while in testing* !!
 * `domain` - `https://<token-api>.<a-domain>.com` or `http://<static-ip>:<port>`
 
@@ -133,29 +133,29 @@ Branch this and find this part of `config.js`
 
 `const starting_block = 49988008;` //from what block does your token start
 
-`const prefix = 'dlux_'` //Community token name for Custom Json IDs
+`const prefix = 'zark_'` //Community token name for Custom Json IDs
 
 `const TOKEN = 'DLUX'` //Token name
 
-`const tag = 'dlux'` //https://the-front-end.com/`tag`/@`leader`/`permlink`
+`const tag = 'zark'` //https://the-front-end.com/`tag`/@`leader`/`permlink`
 
-`const jsonTokenName = 'dlux'` //what customJSON in Escrows and sends is looking for
+`const jsonTokenName = 'zark'` //what customJSON in Escrows and sends is looking for
 
-`const leader = 'dlux-io'` //Default account to pull state from, will post daily
+`const leader = 'retzark'` //Default account to pull state from, will post daily
 
-`const ben = 'dlux-io'` //Account where comment benifits trigger token action
+`const ben = 'retzark'` //Account where comment benifits trigger token action
 
-`const delegation = 'dlux-io'` //account people can delegate to for rewards
+`const delegation = 'retzark'` //account people can delegate to for rewards
 
-`const msaccount = 'dac.escrow'` //account controlled by community leaders
+`const msaccount = ''` //account controlled by community leaders
 
-`const mainAPI = 'token.dlux.io'` //leaders API probably
+`const mainAPI = 'zark.d.buzz'` //leaders API probably
 
-`const mainFE = 'dlux.io'` //frontend for content
+`const mainFE = 'market.d.buzz'` //frontend for content
 
-`const mainIPFS = 'a.ipfs.dlux.io'` //IPFS service
+`const mainIPFS = 'ipfs.d.buzz'` //IPFS service
 
-`const mainICO = 'robotolux'` //Account collecting ICO HIVE
+`const mainICO = ''` //Account collecting ICO HIVE
 
 Then alter the `state.js` with balances and other starting information
 
@@ -234,7 +234,7 @@ Send earned SPK to a hive account. Ensure account is valid before send. Tokens c
 
 ## NFT (non-fungible token) Actions
 
-### NFT Transfer (id: dlux_nft_transfer)
+### NFT Transfer (id: zark_nft_transfer)
 
 This action transfers an NFT from one wallet to another.
 
@@ -246,13 +246,13 @@ This action transfers an NFT from one wallet to another.
 #### example:
 
 `json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'aa',
     to: 'somebody'
 }`
 
 
-### NFT Reserve Transfer (id: dlux_nft_reserve_transfer)
+### NFT Reserve Transfer (id: zark_nft_reserve_transfer)
 
 This action builds a token escrow contract with payment price and expiration. Seller uses this action to create a contract for specific wallet to pay for and receive the NFT. As opposed to listing it publicly on the market which would allow any buyer to buy the token.
 
@@ -265,13 +265,13 @@ This action builds a token escrow contract with payment price and expiration. Se
 
 #### example:
 `json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'aa',
     to: 'somebody',
     price: 1000 // 1.000 DLUX 
 }`
 
-### NFT Reserve Complete (id: dlux_nft_reserve_complete)
+### NFT Reserve Complete (id: zark_nft_reserve_complete)
 
 This action fulfills an NFT escrow transfer via complete payment. Recipient of NFT uses this action to complete the contract and receive the NFT. If successfully, the price defined in the contract will be deducted from the wallet.
 
@@ -281,12 +281,12 @@ This action fulfills an NFT escrow transfer via complete payment. Recipient of N
 
 #### example:
 `json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'aa'
 }`
 
 
-### NFT Transfer Cancel (id: dlux_nft_transfer_cancel)
+### NFT Transfer Cancel (id: zark_nft_transfer_cancel)
 
 This action cancels an NFT transfer escrow contract.
 
@@ -296,12 +296,12 @@ This action cancels an NFT transfer escrow contract.
 
 #### example:
 `json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'AA'
 }`
 
 
-### NFT Delete (id: dlux_nft_delete)
+### NFT Delete (id: zark_nft_delete)
 
 This action will permanently delete an NFT. Cannot be undone. Changes NFT's owner to D.
 
@@ -311,11 +311,11 @@ This action will permanently delete an NFT. Cannot be undone. Changes NFT's owne
 
 #### example:
 `json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'AA'
 }`
 
-### NFT Define (id: dlux_nft_define)
+### NFT Define (id: zark_nft_define)
 
 This action defines a new NFT set.
 
@@ -333,7 +333,7 @@ This action defines a new NFT set.
 
 #### example:
 `json: {
-"name":"dlux",
+"name":"zark",
 "type": 1,
 "script": "QmPsxgySUZibuojuUWCMQJpT2uZhijY4Cf7tuJKR8gpZqq", // see example below
 "permlink": "disregardfiat/nft-announcement",
@@ -425,7 +425,7 @@ The script should return:
 `{HTML:SVG, attributes:[{name:'Color 1', value: uColors[0]},{name:'Color 2', value: uColors[1]},{name:'Color 3', value: uColors[2]}], sealed:''} HTML, which may include Base64 Imgs, GTLF, etc... plus an array of attributes, and optionally a sealed picture`
 
 
-### NFT Mint (id: dlux_nft_mint)
+### NFT Mint (id: zark_nft_mint)
 
 This action mints a new NFT 
 
@@ -434,11 +434,11 @@ This action mints a new NFT
 
 #### example:
 `json:{
-    set: "dlux"
+    set: "zark"
 }`
 
 
-### NFT Auction (id: dlux_nft_auction)
+### NFT Auction (id: zark_nft_auction)
 
 This action lists an NFT for auction on the market. Temporarily changes owner to 'ah'.
 
@@ -451,7 +451,7 @@ This action lists an NFT for auction on the market. Temporarily changes owner to
 
 #### example:
 `json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'AA',
     price: 1000, // 1.000 DLUX
     now: 10000, // not implemented
@@ -459,7 +459,7 @@ This action lists an NFT for auction on the market. Temporarily changes owner to
 }`
 
 
-### NFT Auction bidding (id: dlux_nft_bid)
+### NFT Auction bidding (id: zark_nft_bid)
 
 This action makes a bid for an active NFT action
 
@@ -470,12 +470,12 @@ This action makes a bid for an active NFT action
 
 #### example:
 `json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'AA',
     bid_amount: 1000
 }`
 
-### NFT Sell (id: dlux_nft_sell)
+### NFT Sell (id: zark_nft_sell)
 
 This lists an NFT for sale on the market.
 
@@ -486,12 +486,12 @@ This lists an NFT for sale on the market.
 
 #### example:
 `json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'AA',
     price: 1000 // 1.000 DLUX
 }`
 
-### NFT Market Buy (id: dlux_nft_buy)
+### NFT Market Buy (id: zark_nft_buy)
 
 #### params:
 * set = string representing the name of the NFT set
@@ -500,13 +500,13 @@ This lists an NFT for sale on the market.
 
 #### example:
 `json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'AA',
     price: 1000 // 1.000 DLUX
 }`
 
 
-### NFT Sell Cancel (id: dlux_nft_sell_cancel)
+### NFT Sell Cancel (id: zark_nft_sell_cancel)
 
 This action cancels an NFT market sale listing
 
@@ -516,7 +516,7 @@ This action cancels an NFT market sale listing
 
 #### example:
 `json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'AA'
 }`
 
@@ -524,7 +524,7 @@ This action cancels an NFT market sale listing
 
 Similar to NFTs, DLUX offers a decentralized protocol for creating and trading NFT's. These tokens can be airdropped, auctioned, transferred, sold, bought, held in escrow, or bid on.
 
-### FT Transfer (id: dlux_ft_transfer)
+### FT Transfer (id: zark_ft_transfer)
 
 This action transfers a FT from wallet to wallet.
 
@@ -535,11 +535,11 @@ This action transfers a FT from wallet to wallet.
 
 #### example:
 `json:{
-    set: 'dlux',
+    set: 'zark',
     to: 'somebody'
 }`
 
-### FT Airdrop (id: dlux_ft_airdrop)
+### FT Airdrop (id: zark_ft_airdrop)
 
 This action airdrops tokens to a list of wallets.
 
@@ -549,11 +549,11 @@ This action airdrops tokens to a list of wallets.
 
 #### example:
 `json:{
-    set: 'dlux',
+    set: 'zark',
     to: ['somebody','someother']
 }`
 
-### FT Escrow (id: dlux_ft_escrow)
+### FT Escrow (id: zark_ft_escrow)
 
 This action creates escrow contract for a token.
 
@@ -564,7 +564,7 @@ This action creates escrow contract for a token.
 Not implemented
 
 
-### FT Escrow Complete (id: dlux_ft_escrow_complete)
+### FT Escrow Complete (id: zark_ft_escrow_complete)
 
 This action completes escrow for a token.
 
@@ -576,7 +576,7 @@ This action completes escrow for a token.
 Not implemented
 
 
-### FT Escrow Cancel (id: dlux_ft_escrow_cancel)
+### FT Escrow Cancel (id: zark_ft_escrow_cancel)
 
 This action cancels escrow for a token.
 
@@ -587,7 +587,7 @@ This action cancels escrow for a token.
 Not implemented
 
 
-### FT Sell (id: dlux_ft_sell)
+### FT Sell (id: zark_ft_sell)
 
 This action lists a token for sale on the market.
 
@@ -598,7 +598,7 @@ This action lists a token for sale on the market.
 Not implemented
 
 
-### FT Buy (id: dlux_ft_buy)
+### FT Buy (id: zark_ft_buy)
 
 This action places a buy order for token on the market.
 
@@ -609,7 +609,7 @@ This action places a buy order for token on the market.
 Not implemented
 
 
-### FT Sell Cancel (id: dlux_ft_sell_cancel)
+### FT Sell Cancel (id: zark_ft_sell_cancel)
 
 This action cancels the sale for a token on the market.
 
@@ -620,7 +620,7 @@ This action cancels the sale for a token on the market.
 Not implemented
 
 
-### FT Auction (id: dlux_ft_auction)
+### FT Auction (id: zark_ft_auction)
 
 This action lists a token up for action.
 
@@ -632,7 +632,7 @@ This action lists a token up for action.
 Not implemented
 
 
-### FT Bid (id: dlux_ft_bid)
+### FT Bid (id: zark_ft_bid)
 
 This action enters an auction bid for a token.
 

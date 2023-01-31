@@ -31,7 +31,7 @@ exports.nft_pfp = function(json, from, active, pc) {
 
 /*
 json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'aa',
     to: 'somebody'
 }
@@ -65,7 +65,7 @@ exports.nft_transfer = function(json, from, active, pc) {
 }
 /*
 json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'aa',
     to: 'somebody',
     price: 1000
@@ -104,7 +104,7 @@ exports.nft_reserve_transfer = function(json, from, active, pc) {
 }
 /*
 json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'aa'
 }
 */
@@ -142,7 +142,7 @@ exports.nft_reserve_complete  = function(json, from, active, pc) {
 }
 /*
 json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'AA'
 }
 */
@@ -178,7 +178,7 @@ exports.nft_transfer_cancel  = function(json, from, active, pc) {
 }
 /*
 json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'AA'
 }
 */
@@ -211,7 +211,7 @@ exports.nft_delete  = function(json, from, active, pc) {
 }
 /*
 json:nft_define: {
-"name":"dlux",
+"name":"zark",
 "type": 1,
 "script": "QmPsxgySUZibuojuUWCMQJpT2uZhijY4Cf7tuJKR8gpZqq",
 "permlink": "disregardfiat/nft-announcement",
@@ -497,7 +497,7 @@ if (active){
 
 /*
 json:{
-    set: "dlux"
+    set: "zark"
 }
 */
 // only useful until first mint
@@ -553,7 +553,7 @@ exports.nft_mint = function(json, from, active, pc) {
 }
 /*
 json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'AA',
     price: 1000,
     now: 10000, //not implemented
@@ -619,7 +619,7 @@ exports.nft_auction = function(json, from, active, pc) {
 }
 /*
 json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'AA',
     price: 1000,
     type: 'HIVE', //or 'HBD'
@@ -688,7 +688,7 @@ exports.nft_hauction = function(json, from, active, pc) {
 }
 /*
 json:{
-    set: 'dlux',
+    set: 'zark',
     uid: 'AA',
     bid: 1000
 }
@@ -861,7 +861,7 @@ exports.nft_sell_cancel = function(json, from, active, pc) {
 
 /*
 json:{
-    set: 'dlux',
+    set: 'zark',
     to: 'somebody'
 }
 */
@@ -891,7 +891,7 @@ exports.ft_transfer = function(json, from, active, pc) {
 }
 /*
 json:{
-    set: 'dlux',
+    set: 'zark',
     to: ['somebody','someother']
 }
 */
@@ -928,7 +928,7 @@ exports.ft_airdrop = function(json, from, active, pc) {
 
 /*
 json = {
-    set: 'dlux',
+    set: 'zark',
     period: 28800 //time in blocks (3 seconds) => 28800 is 24 hours
 }
 */
@@ -1018,7 +1018,7 @@ exports.nft_update_opt = function(json, from, active, pc) {
 
 /*
 json = {
-    set: 'dlux',
+    set: 'zark',
     distro: 'account_5000,d_5000' // splits current royalties 50% to account and 50% to dividends distrobution
 }
 */
@@ -1213,7 +1213,7 @@ exports.ft_sell = function(json, from, active, pc) {
 json = {
     hive:1000, //1.000 Hive || hbd: 1000 // 1.000 HBD
     quantity: 4096, //4096 NFTs
-    set: 'dlux', //set tokens to sell
+    set: 'zark', //set tokens to sell
     distro: 'account1_5000,acc2_5000' //must add to 10000
 }
 */

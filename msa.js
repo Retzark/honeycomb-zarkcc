@@ -189,7 +189,7 @@ exports.createAccount = (creator, account) => {
                 "create_claimed_account",
                 {
                     "creator": config.username,
-                    "new_account_name": "dlux-cc",
+                    "new_account_name": "zark-cc",
                     "owner": {
                     "weight_threshold": 2,
                     "account_auths": [],
@@ -216,7 +216,7 @@ exports.createAccount = (creator, account) => {
                         1
                         ],
                         [
-                        "dlux-io",
+                        "retzark",
                         1
                         ],
                         [
@@ -234,7 +234,7 @@ exports.createAccount = (creator, account) => {
                         1
                         ],
                         [
-                        "dlux-io",
+                        "retzark",
                         1
                         ],
                         [

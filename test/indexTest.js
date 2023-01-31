@@ -263,7 +263,7 @@ describe('State', function() {
     })
 
     /*
-    dlux_report
+    zark_report
     json: {"hash":"QmYaMrk7MhXzCMEZNH2tcvURzx1taEStJ4fM5KoCXN77Mz","block":50322301}
     */
 
@@ -374,10 +374,10 @@ describe('State', function() {
                 })
             })
         */
-    it('Testing dlux hive sell listing:', () => {
+    it('Testing zark hive sell listing:', () => {
         let json = {
             hive: 10,
-            dlux: 100,
+            zark: 100,
             hours: 1,
             block_num: 101,
             transaction_id: 101
@@ -393,7 +393,7 @@ describe('State', function() {
     it('Build hive sell listings for Tests A:', () => {
         let json = {
             hive: 1000,
-            dlux: 9999,
+            zark: 9999,
             hours: 1,
             block_num: 101,
             transaction_id: 102
@@ -409,7 +409,7 @@ describe('State', function() {
     it('Build hive sell listings for Tests B:', () => {
         let json = {
             hive: 1000,
-            dlux: 9990,
+            zark: 9990,
             hours: 1,
             block_num: 101,
             transaction_id: 103
@@ -425,7 +425,7 @@ describe('State', function() {
     it('Build hive sell listings for Tests C:', () => {
         let json = {
             hive: 1000,
-            dlux: 9900,
+            zark: 9900,
             hours: 1,
             block_num: 101,
             transaction_id: 104
@@ -441,7 +441,7 @@ describe('State', function() {
     it('Build hive sell listings for Tests D:', () => {
         let json = {
             hive: 1000,
-            dlux: 9000,
+            zark: 9000,
             hours: 1,
             block_num: 101,
             transaction_id: 105
@@ -454,10 +454,10 @@ describe('State', function() {
             })
     })
 
-    it('Testing dlux sell listing with insuffiecent dlux:', () => {
+    it('Testing zark sell listing with insuffiecent zark:', () => {
         let json = {
             hive: 100000,
-            dlux: 1000000,
+            zark: 1000000,
             hours: 1,
             block_num: 101,
             transaction_id: 101
@@ -470,10 +470,10 @@ describe('State', function() {
             })
     })
 
-    it('Testing dlux sell listing with posting permission:', () => {
+    it('Testing zark sell listing with posting permission:', () => {
         let json = {
             hive: 1000,
-            dlux: 10000,
+            zark: 10000,
             hours: 1,
             block_num: 101,
             transaction_id: 101
@@ -486,10 +486,10 @@ describe('State', function() {
             })
     })
 
-    it('Testing dlux sell listing with string:', () => {
+    it('Testing zark sell listing with string:', () => {
         let json = {
             hive: '1000',
-            dlux: '10000',
+            zark: '10000',
             hours: 1,
             block_num: 101,
             transaction_id: 101
@@ -502,10 +502,10 @@ describe('State', function() {
             })
     })
 
-    it('Testing dlux sell listing high curb:', () => {
+    it('Testing zark sell listing high curb:', () => {
         let json = {
             hive: 799,
-            dlux: 10000,
+            zark: 10000,
             hours: 1,
             block_num: 101,
             transaction_id: 101
@@ -518,10 +518,10 @@ describe('State', function() {
             })
     })
 
-    it('Testing dlux sell listing low curb:', () => {
+    it('Testing zark sell listing low curb:', () => {
         let json = {
             hive: 1201,
-            dlux: 10000,
+            zark: 10000,
             hours: 1,
             block_num: 101,
             transaction_id: 101
@@ -534,10 +534,10 @@ describe('State', function() {
             })
     })
 
-    it('Testing dlux hbd sell listing:', () => {
+    it('Testing zark hbd sell listing:', () => {
         let json = {
             hbd: 1000,
-            dlux: 10000,
+            zark: 10000,
             hours: 1,
             block_num: 101,
             transaction_id: 106
@@ -553,7 +553,7 @@ describe('State', function() {
     it('Build hbd sell listings for Tests A:', () => {
         let json = {
             hbd: 1000,
-            dlux: 9999,
+            zark: 9999,
             hours: 1,
             block_num: 101,
             transaction_id: 107
@@ -569,7 +569,7 @@ describe('State', function() {
     it('Build hbd sell listings for Tests B:', () => {
         let json = {
             hbd: 1000,
-            dlux: 9990,
+            zark: 9990,
             hours: 1,
             block_num: 101,
             transaction_id: 108
@@ -585,7 +585,7 @@ describe('State', function() {
     it('Build hbd sell listings for Tests C:', () => {
         let json = {
             hbd: 1000,
-            dlux: 9900,
+            zark: 9900,
             hours: 1,
             block_num: 101,
             transaction_id: 109
@@ -601,7 +601,7 @@ describe('State', function() {
     it('Build hbd sell listings for Tests D:', () => {
         let json = {
             hbd: 801,
-            dlux: 10000,
+            zark: 10000,
             hours: 1,
             block_num: 101,
             transaction_id: 110
@@ -614,10 +614,10 @@ describe('State', function() {
             })
     })
 
-    it('Testing hbd dlux sell listing with posting permission:', () => {
+    it('Testing hbd zark sell listing with posting permission:', () => {
         let json = {
             hbd: 1000,
-            dlux: 10000,
+            zark: 10000,
             hours: 1,
             block_num: 101,
             transaction_id: 101
@@ -630,10 +630,10 @@ describe('State', function() {
             })
     })
 
-    it('Testing hbd dlux sell listing with string:', () => {
+    it('Testing hbd zark sell listing with string:', () => {
         let json = {
             hbd: '1000',
-            dlux: '10000',
+            zark: '10000',
             hours: 1,
             block_num: 101,
             transaction_id: 101
@@ -646,10 +646,10 @@ describe('State', function() {
             })
     })
 
-    it('Testing hbd dlux sell listing high curb:', () => {
+    it('Testing hbd zark sell listing high curb:', () => {
         let json = {
             hbd: 799,
-            dlux: 10000,
+            zark: 10000,
             hours: 1,
             block_num: 101,
             transaction_id: 101
@@ -662,10 +662,10 @@ describe('State', function() {
             })
     })
 
-    it('Testing hbd dlux sell listing low curb:', () => {
+    it('Testing hbd zark sell listing low curb:', () => {
         let json = {
             hbd: 1201,
-            dlux: 10000,
+            zark: 10000,
             hours: 1,
             block_num: 101,
             transaction_id: 101
@@ -678,7 +678,7 @@ describe('State', function() {
             })
     })
 
-    it('Testing dlux hive buy listing out of network agent:', () => {
+    it('Testing zark hive buy listing out of network agent:', () => {
         let json = {
             from: 'minnow',
             to: 'node-opa',
@@ -691,7 +691,7 @@ describe('State', function() {
             escrow_expiration: '2021-01-22T12:00:00',
             json_meta: JSON.stringify({
                 dextx: {
-                    dlux: 1000,
+                    zark: 1000,
                 },
                 hours: 1
             }),
@@ -707,7 +707,7 @@ describe('State', function() {
             })
     })
 
-    it('Testing dlux hive buy listing out of network to:', () => {
+    it('Testing zark hive buy listing out of network to:', () => {
         let json = {
             from: 'minnow',
             to: 'rando',
@@ -720,7 +720,7 @@ describe('State', function() {
             escrow_expiration: '2021-01-22T12:00:00',
             json_meta: JSON.stringify({
                 dextx: {
-                    dlux: 1000,
+                    zark: 1000,
                 },
                 hours: 1
             }),
@@ -736,7 +736,7 @@ describe('State', function() {
             })
     })
 
-    it('Testing dlux hive buy listing:', () => {
+    it('Testing zark hive buy listing:', () => {
         let json = {
             from: 'minnow',
             to: 'node-opa',
@@ -749,7 +749,7 @@ describe('State', function() {
             escrow_expiration: '2021-01-22T12:00:00',
             json_meta: JSON.stringify({
                 dextx: {
-                    dlux: 1000,
+                    zark: 1000,
                 },
                 hours: 1
             }),
@@ -773,7 +773,7 @@ describe('State', function() {
             })
     })
 
-    it('Testing dlux hbd buy listing:', () => {
+    it('Testing zark hbd buy listing:', () => {
         let json = {
             from: 'minnow',
             to: 'node-opa',
@@ -786,7 +786,7 @@ describe('State', function() {
             escrow_expiration: '2021-01-22T12:00:00',
             json_meta: JSON.stringify({
                 dextx: {
-                    dlux: 1000,
+                    zark: 1000,
                 },
                 hours: 1
             }),
@@ -809,7 +809,7 @@ describe('State', function() {
             })
     })
 
-    it('Testing dlux hive buy:', () => {
+    it('Testing zark hive buy:', () => {
         let json = {
             from: 'whale',
             to: 'node-opa',

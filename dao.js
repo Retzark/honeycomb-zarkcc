@@ -329,7 +329,7 @@ function dao(num) {
                     }
                 }
                 if (his.length) {
-                    hi.o = parseFloat(his[0].price); // open, close, top bottom, dlux, volumepair
+                    hi.o = parseFloat(his[0].price); // open, close, top bottom, zark, volumepair
                     hi.c = parseFloat(his[his.length - 1].price);
                     hi.t = 0;
                     hi.b = hi.o;
@@ -351,7 +351,7 @@ function dao(num) {
                     dex.hive.days[num] = hi;
                 }
                 if (hisb.length) {
-                    hib.o = parseFloat(hisb[0].price); // open, close, top bottom, dlux, volumepair
+                    hib.o = parseFloat(hisb[0].price); // open, close, top bottom, zark, volumepair
                     hib.c = parseFloat(hisb[hisb.length - 1].price);
                     hib.t = 0;
                     hib.b = hib.o;
